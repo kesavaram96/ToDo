@@ -1,0 +1,66 @@
+<html>
+<head>
+
+<script src="https://kit.fontawesome.com/e2e6e2026a.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script type="text/javascript" src="table_script.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title> ToDo-Kesavaram</title>
+</head>
+
+
+<body>
+
+
+<div class="container col-3 mt-4">
+	<H1> Add your Todo</H1>
+</div>
+<div class="container mt-4">
+ <form>
+ 	<div class="mb-3">
+    <label for="todoTitle" class="form-label">To do:</label>
+    <input type="text" class="form-control" id="todoTitle">
+
+  </div>
+  <div class="mb-3">
+    <label for="todoDescription" class="form-label">Description:</label>
+    <input type="text" class="form-control" id="todoDescription">
+  </div>
+  <div class="mb-3 form-check">
+  </div>
+  <input type="button" class="add btn btn-success container" onclick="add_row();" value="Submit"></button>
+</form>
+
+</div>
+
+
+
+
+<br>
+<br>
+<div id="wrapper">
+<table align='center' id="data_table" class="table container">
+<thead>
+	<tr class="">
+	<th scope="col">ToDO</th>
+	<th scope="col">Description</th>
+	<th scope="col">Edit </th>
+	<th scope="col">Save</th>
+	<th scope="col">Delete</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+	</tr>
+</tbody>
+</table>
+</div>
+
+<footer>
+    <script src="app.js"></script>
+</footer>
+</body>
+</html>

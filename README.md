@@ -1,2 +1,1 @@
-# ToDo
-Sample project for js
+# to-do
